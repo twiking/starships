@@ -10,6 +10,6 @@ $ npm run dev
 $ npm run production
 ```
 
-Or...just check dist/index.html
+Or...just run [dist/index.html](dist/index.html) to check out the result.
 
-Had to skip PostCss in the end, because of nasty bug in ExtractTextPlugin :(
+(Had to skip PostCss in the end, because of nasty bug in ExtractTextPlugin and time ran out...)
