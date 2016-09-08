@@ -1,0 +1,22 @@
+.starship-details-item {
+  margin: 0 10px 30px;
+}
+
+.starship-details-item__icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+.starship-details-item__title {
+  font-size: 20px;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.starship-details-item__info {
+  font-size: 40px;
+  line-height: 40px;
+}

@@ -1,0 +1,83 @@
+.starship__body {
+  position: absolute;
+  top: 50%;
+  margin-top: -65px;
+  left: 50%;
+  margin-left: -90px;
+  height: 130px;
+  width: 220px;
+  background: #05780C;
+  border-radius: 20px 100px 100px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.starship__body::after{
+  position: absolute;
+  top: -59px;
+  left: 12px;
+  content: "";
+  height: 0;
+  width: 20px;
+  border-bottom: 60px solid #05780C;
+  border-left: 30px solid transparent;
+  border-right: 0px solid transparent;
+  padding: 0 2px 0 0;
+  transform: rotate(90deg);
+}
+
+.starship__body::before{
+  top: 128px;
+  left: 12px;
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 20px;
+  border-bottom: 60px solid #05780C;
+  border-left: 0px solid transparent;
+  border-right: 30px solid transparent;
+  padding: 0 2px 0 0;
+  transform: rotate(90deg);
+ }
+
+.starship__name {
+  width: 130px;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.starship__window {
+  position: absolute;
+  top: 44px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border-radius: 50%;
+  border: 10px solid #333;
+}
+
+.starship__tail {
+  position: absolute;
+  z-index: -1;
+  display: none;
+  left: -66px;
+  top: 50%;
+  margin-top: -34px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 34px 126px 34px 0;
+  border-color: transparent yellow transparent transparent;
+  animation: tailfire .1s infinite linear;
+}
+
+@keyframes tailfire {
+  0% {border-width: 34px 126px 34px 100px;}
+  25% {border-width: 34px 126px 34px 85px;}
+  50% {border-width: 34px 126px 34px 115px;}
+  75% {border-width: 34px 126px 34px 85px;}
+  100% {border-width: 34px 126px 34px 100px;}
+}

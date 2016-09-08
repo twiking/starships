@@ -1,0 +1,24 @@
+.starships-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.starships-list__item {
+  position: relative;
+  width: 320px;
+  height: 300px;
+  transition: transform 1s;
+}
+
+.starships-list__item:hover {
+  transform: rotate(-30deg);
+}
+
+.starships-list__item:hover .starship__tail--active {
+  display: block;
+}
